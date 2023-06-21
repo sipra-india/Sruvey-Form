@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+Share your valuable opinions and insights through our quick and anonymous survey.</p>
+    <form id="survey-form" >
+      <fieldset>
+        <label id="name-label" for="name">Name :
+          <input id="name" name="name" type="text" required placeholder="Enter your name..." >
+        </label>
+        <label id="email-label" for="email"> Email :
+          <input id="email" name="email" type="email" required placeholder="Enter your email here..." >
+        </label>
+        <label id="number-label" for="number">Age : 
+          <input placeholder="age.." id="number" name="number" type="number" min="14" max="100" >
+        </label>
+        <label id="dropdown-label" for="dropdown">Gender : 
+          <select required id="dropdown" name="dropdown">
+          <option value="">Select one...</option>
+          <option value="1">Male</option>
+          <option value="2">Female</option>
+          <option value="3">Non-Binary</option>
+          <option value="4">Prefer not to say</option>
+        </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label id="roles" for="role-dropdown">What role describes you the best?
+          <select id="role-dropdown">
+            <option value="">Select one...</option>
+            <option value="1">Student</option>
+            <option value="2">Employee</option>
+            <option value="3">Manager</option>
+            <option value="4">Self-employed</option>
+            <option value="5">Unemployed</option>
+          </select>
+        </label>
+        <label id="pet-label" for="pets">What type of pets do you have?
+          <div id="pets">
+            <input class="check" type="checkbox" id="dog" name="dog" value="dog"> Dog
+            <input type="checkbox" class="check" value="cat" id="cat" name="cat"> Cat 
+            <input value="bird" class="check" type="checkbox" id="bird" name="bird"> Bird
+            <input type="checkbox" value="fish" class="check" id="fish" name="fish"> Fish
+            <input class="check" type="checkbox" value="other" id="other" name="other"> Others
+          </div>
+        </label>
+        <label id="preferances" for="beverages" >What is your morning beverage preference?
+          <div id="beverages">
+            <input class="check" type="radio" id="tea" value="tea" name="beverage">Tea
+            <input type="radio" value="coffee" class="check" id="coffee" name="beverage">Coffee
+          </div>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label id="comment-label" for="comment">Leave a comment or some suggestions :
+          <textarea id="comment" name="comment" type="text" cols="30" rows="3" placeholder="Leave a comment here..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
